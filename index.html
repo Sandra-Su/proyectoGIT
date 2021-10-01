@@ -6,8 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" ></script>
 </head>
 <body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
     <main>
         <h1>Hola mi nombre es Sandra</h1>
         <h2>Estudio el 7mo semestre de la carrera ingenieria</h2>
@@ -15,40 +43,7 @@
         <figure>
             <img src="./ldp.jpg" alt="imagen de la casa de papel">
         </figure>
-        <table>
-            <tr>
-                <td>Intruccion</td>
-                <td>Descripcion</td>
-            </tr>
-            <tr>
-                <td>git --version</td>
-                <td>Nos muestra la version que tenemos instalada</td>
-            </tr>
-            <tr>
-                <td>git init</td>
-                <td>inicializa el repositorio</td>
-            </tr>
-            <tr>
-                <td>git add</td>
-                <td>Añade los archivos que hemos modificado o creado. Se puede especificar el nombre del archivo o poner un punto despues del add para que agregue todo</td>
-            </tr>
-            <tr>
-                <td>git commit  -m "mensaje"</td>
-                <td>Añade un comentario que explica los cambios que acabamos de hacer con el comando git add</td>
-            </tr>
-            <tr>
-                <td>git commit  -am "mensaje"</td>
-                <td>Junta la función del comando git add junto con git commit</td>
-            </tr>
-            <tr>
-                <td>git config –global user.name “nombre”</td>
-                <td>Nos permite definir el nombre de nuestro usuario, para poder realizar los commits</td>
-            </tr>
-            <tr>
-                <td>git config –global user.email “correo electrónico”</td>
-                <td>Nos permite definir el correo de nuestro usuario</td>
-            </tr>
-        </table>
+        
     </main>
 </body>
 </html>
