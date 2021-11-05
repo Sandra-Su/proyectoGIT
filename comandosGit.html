@@ -24,12 +24,6 @@
                   <li class="nav-item">
                     <a class="nav-link" href="comandosGit.html">Comandos GIT</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -66,7 +60,49 @@
             <tr>
                 <td>git config –global user.email “correo electrónico”</td>
                 <td>Nos permite definir el correo de nuestro usuario</td>
+            </tr><!--AQUI EMPIEZAN LOS NUEVOS COMANDOS-->
+            <tr>
+              <td>git log nombreArchivo.ext</td>
+              <td>Nos muestra los commits con su respectivo id 
+                También podemos escribir solo <b>git log</b> 
+              </td>
             </tr>
+            <tr>
+              <td>git show nombreArchivo.ext</td>
+              <td>Nos muestra lo que hemos quitado y agregado, es decir, las modificaciones que se le hicieron al archivo</td>
+            </tr>
+            <tr>
+              <td>git commitA commitB</td>
+              <td>muestra las diferencias entre ambas versiones. A este comando se le mandan los id de los commit que se quieren comparar</td>
+            </tr>
+            <tr>
+              <td>git reset </td>
+              <td>Nos ayuda a volver en el tiempo sin necesidad de ver el historial<ul>
+                <li>-hard  borra todo, es una mala práctica</li>
+                <li>-soft  vuelve a la versión en cuestión pero respeta lo que hay en el área de staging </li>
+                <li>-HEAD  saca los archivos del área de staging</li>
+              </ul></td>
+            </tr>
+            <tr>
+              <td>git rm</td>
+              <td>Elimina archivos de git sin eliminar su historial del sistemas de versiones. Buena práctica
+                <ul><li>-cached elimina los archivos del área de staging y del próximo commit pero los mantiene en nuestro disco duro</li>
+                <li>-force elimina los archivos de git y del disco duro</li>
+              </ul></td>
+            </tr>
+            <tr>
+              <td>git branch nombreRama</td>
+              <td>Crea una nueva rama. Si solo ponemos git branch nos mostrará todas las ramas que tenemos</td>
+            </tr>
+            <tr>
+              <td>git checkout nombreRama</td>
+              <td>Nos permite movernos a la rama que deseamos</td>
+            </tr>
+            <tr>
+              <td>git merge nombreRama</td>
+              <td>Nos ayuda a mezclar las ramas y crear una versión final. El nombre de la rama es de donde se extraerán los cambios</td>
+            </tr>
+
         </table>
     </div>
     
